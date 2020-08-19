@@ -2,6 +2,7 @@ import { gql } from '@apollo/client';
 
 export const POSTS_ALL =  gql`{
     posts {
+        id,
         postId,
         blogId,
         postTitle,
@@ -18,3 +19,11 @@ export const BLOG_CATEGORIES =  gql`{
        name
     }
 }`;
+
+export const DELETE_POST = gql`
+  mutation DeletePost($id: String) {
+    deletePost(id: $id) {
+      id
+    }
+  }
+`;
