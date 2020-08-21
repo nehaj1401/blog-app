@@ -1,5 +1,5 @@
 export interface PostInfo {
-    postId: Number,
+    id: string,
     blogId: Number,
     postTitle: string,
     postText: string,

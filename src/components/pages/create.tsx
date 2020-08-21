@@ -1,19 +1,21 @@
-import React, { FunctionComponent, useState, useContext } from 'react';
+import React, { FunctionComponent, useState } from 'react';
 import { Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
-// import { blogCategories } from '../../content/data';
-import { useQuery } from '@apollo/client';
-import { BLOG_CATEGORIES } from '../../client/query/postInfo';
-import { isNullableType } from 'graphql';
+import { useQuery, useMutation } from '@apollo/client';
+import { BLOG_CATEGORIES, ADD_POST } from '../../client/query/postInfo';
 import { BlogInfo } from '../../interface/postInfo';
+import { addPostToCache } from './helper';
 
 const CreatePost: FunctionComponent = () => {
 
-  // const { updateData } = useContext(blogContext);
   const { loading, error, data } = useQuery(BLOG_CATEGORIES);
   
-  const postInfo = { postTitle: '', postText: '', blogId: isNullableType,
+  const postInfo = { postTitle: '', postText: '', blogId: null,
   blogCategory: ''};
   const [state, updateState] = useState(postInfo);
+
+  const [addPost] = useMutation(ADD_POST, { update(cache, { data: { addPost } }) {
+    addPostToCache(cache, addPost); }
+  });
   
   if (loading) {
     return <p>Loading...</p>;
@@ -25,8 +27,8 @@ const CreatePost: FunctionComponent = () => {
   const onSubmitClick = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (state.blogId !== null && state.postTitle !== '' && state.postText !== '') {
-      const postData = {...state, postId: 123, postedBy: 'Neha'}
-      // updateData('add', postData);
+      const postData = {...state, id: '123', postedBy: 'Neha', ownerId: 234};
+      addPost({ variables: { post: postData } });
     } else {
       alert('Fill all the required fields..');
     }
@@ -52,7 +54,7 @@ const CreatePost: FunctionComponent = () => {
         const selectedIndex = target.selectedIndex;
         const blogId = data.blogCategories[selectedIndex].id;
         updateState((prevState) => {
-          return {...prevState,  blogId: blogId, blogCategory: value};
+          return {...prevState,  blogId, blogCategory: value};
         });
         break;
     }

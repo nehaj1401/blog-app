@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useEffect } from 'react';
+import React, { FunctionComponent } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import CreatePost from './pages/create';
 import Home from './pages/home';

@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useContext } from 'react';
+import React, { FunctionComponent } from 'react';
 import { Card, CardBody, CardText } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
@@ -6,7 +6,7 @@ import { POSTS_ALL } from '../../client/query/postInfo';
 import { PostInfo } from '../../interface/postInfo'
 
 const Home: FunctionComponent = () => {
-  // const { posts } = useContext(blogContext);
+
   const { loading, error, data } = useQuery(POSTS_ALL);
   if (loading) {
     return <p>Loading...</p>;
@@ -18,7 +18,7 @@ const Home: FunctionComponent = () => {
   return (
     <div>
       { data.posts.map((item: PostInfo)=> {
-        const href = `/blogpage/post_${item.postId}`;
+        const href = `/blogpage/post_${item.id}`;
         return( <Card>
         <CardBody>
           <Link to={href}>{item.postTitle}</Link>

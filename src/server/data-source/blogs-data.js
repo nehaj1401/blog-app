@@ -1,7 +1,6 @@
-const blogsData = [
+export const blogsData = [
     {
       id: "1",
-      postId: 1,
       blogId: 10,
       postTitle: "ES6 Features",
       postText: `JavaScript let. The let statement allows you to declare a variable with block scope.
@@ -13,7 +12,6 @@ const blogsData = [
     },
     {
         id: "2",
-        postId: 2,
         blogId: 10,
         postTitle: "ES5 Features",
         postText: `JavaScript let. The let statement allows you to declare a variable with block scope.
@@ -25,7 +23,6 @@ const blogsData = [
     },
     {
         id: "3",
-        postId: 3,
         blogId: 10,
         postTitle: "ES5 Features",
         postText: `JavaScript let. The let statement allows you to declare a variable with block scope.
@@ -37,7 +34,6 @@ const blogsData = [
     },
     {
         id: "4",
-        postId: 4,
         blogId: 10,
         postTitle: "ES5 Features",
         postText: `JavaScript let. The let statement allows you to declare a variable with block scope.
@@ -49,7 +45,6 @@ const blogsData = [
     },
     {
         id: "5",
-        postId: 5,
         blogId: 10,
         postTitle: "ES5 Features",
         postText: `JavaScript let. The let statement allows you to declare a variable with block scope.
@@ -61,7 +56,6 @@ const blogsData = [
     },
     {
         id: "6",
-        postId: 6,
         blogId: 10,
         postTitle: "ES5 Features",
         postText: `JavaScript let. The let statement allows you to declare a variable with block scope.
@@ -73,7 +67,6 @@ const blogsData = [
     },
     {
         id: "7",
-        postId: 7,
         blogId: 20,
         postTitle: "ES7 Features",
         postText: `JavaScript let. The let statement allows you to declare a variable with block scope.
@@ -85,7 +78,6 @@ const blogsData = [
     },
     {
         id: "8",
-        postId: 8,
         blogId: 20,
         postTitle: "ES8 Features",
         postText: `JavaScript let. The let statement allows you to declare a variable with block scope.
@@ -97,40 +89,40 @@ const blogsData = [
     },
     {
         id: "9",
-        postId: 9,
         blogId: 30,
         postTitle: "React Lifecycle Hooks",
         postText: `JavaScript let. The let statement allows you to declare a variable with block scope.
         JavaScript let. The let statement allows you to declare a variable with block scope.
         JavaScript let. The let statement allows you to declare a variable with block scope.`,
         blogCategory:"ReactJS",
-        postedBy: "Stacy Cam"
+        postedBy: "Stacy Cam",
+        ownerId: 456
     },
     {
         id: "10",
-        postId: 10,
         blogId: 30,
         postTitle: "React Functional Components",
         postText: `JavaScript let. The let statement allows you to declare a variable with block scope.
         JavaScript let. The let statement allows you to declare a variable with block scope.
         JavaScript let. The let statement allows you to declare a variable with block scope.`,
         blogCategory:"ReactJS",
-        postedBy: "Stacy Cam"
+        postedBy: "Stacy Cam",
+        ownerId: 456
     },
     {
         id: "11",
-        postId: 11,
         blogId: 40,
         postTitle: "React Native Concepts",
         postText: `JavaScript let. The let statement allows you to declare a variable with block scope.
         JavaScript let. The let statement allows you to declare a variable with block scope.
         JavaScript let. The let statement allows you to declare a variable with block scope.`,
         blogCategory:"React Native",
-        postedBy: "Stacy Cam"
+        postedBy: "Stacy Cam",
+        ownerId: 456
     }
   ];
 
-  const blogCategories = [
+  export const blogCategories = [
       {
           id: 10,
           name: 'Javascript'
@@ -148,5 +140,3 @@ const blogsData = [
         name: 'React Native'
       }
   ];
-
-  module.exports = { blogsData, blogCategories };
