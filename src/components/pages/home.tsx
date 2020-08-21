@@ -3,7 +3,7 @@ import { Card, CardBody, CardText } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { POSTS_ALL } from '../../client/query/postInfo';
-import { PostInfo } from '../../interface/postInfo'
+import { PostInfo } from '../interface/postInfo'
 
 const Home: FunctionComponent = () => {
 

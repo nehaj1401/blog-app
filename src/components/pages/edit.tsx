@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useState } from 'react';
 import { Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
-import { PostInfo } from '../../interface/postInfo'
+import { PostInfo } from '../interface/postInfo'
 import { useMutation } from '@apollo/client';
 import { UPDATE_POST } from '../../client/query/postInfo';
 

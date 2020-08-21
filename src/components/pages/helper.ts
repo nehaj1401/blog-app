@@ -1,4 +1,4 @@
-import { PostInfo } from '../../interface/postInfo';
+import { PostInfo } from '../interface/postInfo';
 import { ApolloCache } from '@apollo/client';
 import { POSTS_ALL } from '../../client/query/postInfo';
 

@@ -2,7 +2,7 @@ import React, { FunctionComponent, useState } from 'react';
 import { Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import { useQuery, useMutation } from '@apollo/client';
 import { BLOG_CATEGORIES, ADD_POST } from '../../client/query/postInfo';
-import { BlogInfo } from '../../interface/postInfo';
+import { BlogInfo } from '../interface/postInfo';
 import { addPostToCache } from './helper';
 
 const CreatePost: FunctionComponent = () => {

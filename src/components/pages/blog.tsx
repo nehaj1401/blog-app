@@ -3,7 +3,7 @@ import { Card, CardBody, CardHeader, CardText, CardFooter, Button } from 'reacts
 import { useParams } from "react-router-dom";
 import { useQuery, useMutation } from '@apollo/client';
 import { POSTS_ALL, DELETE_POST } from '../../client/query/postInfo';
-import { PostInfo } from '../../interface/postInfo';
+import { PostInfo } from '../interface/postInfo';
 import EditPost from './edit';
 import { removePostFromCache } from './helper';
 
