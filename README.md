@@ -9,33 +9,33 @@ run `npm install` in the project directory
 After creation, project should look like this:
 blog-app/  
   README.md  
-  node_modules/
-  package.json
-  public/
-    index.html
-    favicon.ico
-  src/
-    App.css
-    index.css
-    index.tsx
-    logo.svg
-    client/
-      apollo-client.ts
-      query/
-        postInfo.ts
-    components/
-      App.tsx
-      Header.tsx
-      interface/
-        postInfo.ts
-      pages/
-        authorsList.tsx
-        blog.tsx
-        create.tsx
-        edit.tsx
-        helper.ts
-        home.tsx
-        postsList.tsx
+  node_modules/  
+  package.json  
+  public/  
+    index.html  
+    favicon.ico  
+  src/  
+    App.css  
+    index.css  
+    index.tsx  
+    logo.svg  
+    client/  
+      apollo-client.ts  
+      query/  
+        postInfo.ts  
+    components/  
+      App.tsx  
+      Header.tsx  
+      interface/  
+        postInfo.ts  
+      pages/  
+        authorsList.tsx  
+        blog.tsx  
+        create.tsx  
+        edit.tsx  
+        helper.ts  
+        home.tsx  
+        postsList.tsx  
         
         
         
