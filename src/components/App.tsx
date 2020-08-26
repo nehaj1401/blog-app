@@ -20,7 +20,7 @@ const App: FunctionComponent = () => {
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/create" exact component={CreatePost} />
-              <Route path="/blogpage/:id" component={Blog} />
+              <Route path="/blogpage/:param" component={Blog} />
             </Switch>
           </ApolloProvider>
         </div>

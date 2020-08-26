@@ -1,22 +1,29 @@
 import { gql } from '@apollo/client';
 
-export const POSTS_ALL =  gql`{
-    posts {
-        id,
-        blogId,
-        postTitle,
-        postText,
-        blogCategory,
-        postedBy,
-        ownerId
-    }
+export const GET_ALL_POSTS =  gql`{
+  posts {
+    id,
+    blogId,
+    postTitle,
+    postText,
+    blogCategory,
+    postedBy,
+    ownerId
+  }
 }`;
 
-export const BLOG_CATEGORIES =  gql`{
-    blogCategories {
-        id,
-       name
-    }
+export const GET_BLOG_CATEGORIES =  gql`{
+  blogCategories {
+    id,
+    name
+  }
+}`;
+
+export const GET_AUTHORS =  gql`{
+  authors {
+      id,
+     name
+  }
 }`;
 
 export const DELETE_POST = gql`

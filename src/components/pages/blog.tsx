@@ -2,15 +2,15 @@ import React, { FunctionComponent, useState } from 'react';
 import { Card, CardBody, CardHeader, CardText, CardFooter, Button } from 'reactstrap';
 import { useParams } from "react-router-dom";
 import { useQuery, useMutation } from '@apollo/client';
-import { POSTS_ALL, DELETE_POST } from '../../client/query/postInfo';
+import { GET_ALL_POSTS, DELETE_POST } from '../../client/query/postInfo';
 import { PostInfo } from '../interface/postInfo';
 import EditPost from './edit';
 import { removePostFromCache } from './helper';
 
 const Blog: FunctionComponent = () => {
 
-const  { id } = useParams();
-const { loading, error, data } = useQuery(POSTS_ALL);
+const  { param } = useParams();
+const { loading, error, data } = useQuery(GET_ALL_POSTS);
 const [state, updateState] = useState({ show: false, post: data?.posts[0] });
 const [deletePost] = useMutation(DELETE_POST, { update(cache, { data: { deletePost } }) {
   removePostFromCache(cache, deletePost); }
@@ -23,10 +23,19 @@ if (error) {
   return <p>Error :(</p>;
 } 
 
-const postId = id.split('_')[1];
-const relatedPosts =  data.posts.filter( (value: PostInfo) => {
-  return value.id === postId;
-});
+const type = param.split('_')[0];
+const id = param.split('_')[1];
+let relatedPosts = null;
+
+if (type === 'author') {
+  relatedPosts =  data.posts.filter( (value: PostInfo) => {
+    return value.ownerId === id;
+  });
+} else {
+  relatedPosts =  data.posts.filter( (value: PostInfo) => {
+    return value.id === id;
+  });
+}
 
 const onDeleteClick = (event: any) => {
   deletePost({ variables: { id: event.target.id }});
