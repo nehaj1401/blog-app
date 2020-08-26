@@ -6,8 +6,7 @@ run `npm install` in the project directory
 
 ## Folder Structure
 
-After creation, project should look like this:
-
+### After creation, project should look like this:
 blog-app/
   README.md
   node_modules/
