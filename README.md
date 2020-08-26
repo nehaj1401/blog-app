@@ -20,7 +20,7 @@ blog-app/
     index.tsx  
     logo.svg  
     client/  
-      apollo-client.ts  
+        apollo-client.ts  
       query/  
         postInfo.ts  
     components/  
