@@ -6,7 +6,8 @@ run `npm install` in the project directory
 
 ## Folder Structure
 
-After creation, project should look like this:
+After creation, project should look like this:  
+
 blog-app/  
   README.md  
   node_modules/  
@@ -66,5 +67,18 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.  
+
+### To set up Apollo Server
+
+Extract out apollo-server folder from the project  
+
+### Install Dependencies
+
+run `npm install` in the folder  
+
+### Scripts available
+
+To build the project- `npm run build`  
+To run - `npm run start`
 
