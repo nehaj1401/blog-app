@@ -1,0 +1,79 @@
+[{
+	"id": "1",
+	"blogId": "10",
+	"postTitle": "ES6 Features",
+	"postText": "JavaScript let. The let statement allows you to declare a variable with block \n JavaScript let. The let statement allows you to declare a variable with block",
+	"authorId": "1221"
+}, {
+	"id": "2",
+	"blogId": "10",
+	"postTitle": "ES8 Features",
+	"postText": "JavaScript let. The let statement allows you to declare a variable with block \n JavaScript let. The let statement allows you to declare a variable with block",
+	"authorId": "1221"
+}, {
+	"id": "3",
+	"blogId": "10",
+	"postTitle": "ES5 Features",
+	"postText": "JavaScript let. The let statement allows you to declare a variable with block scope.\nJavaScript let. The let statement allows you to declare a variable with block scope.\nJavaScript let. The let statement allows you to declare a variable with block scope.",
+	"authorId": "1221"
+}, {
+	"id": "4",
+	"blogId": "10",
+	"postTitle": "ES5 Features",
+	"postText": "JavaScript let. The let statement allows you to declare a variable with block scope.\nJavaScript let. The let statement allows you to declare a variable with block scope.\nJavaScript let. The let statement allows you to declare a variable with block scope.",
+	"authorId": "1221"
+}, {
+	"id": "5",
+	"blogId": "10",
+	"postTitle": "ES5 Features",
+	"postText": "JavaScript let. The let statement allows you to declare a variable with block scope.\nJavaScript let. The let statement allows you to declare a variable with block scope.\nJavaScript let. The let statement allows you to declare a variable with block scope.",
+	"authorId": "1221"
+}, {
+	"id": "6",
+	"blogId": "10",
+	"postTitle": "ES5 Features",
+	"postText": "JavaScript let. The let statement allows you to declare a variable with block scope.\nJavaScript let. The let statement allows you to declare a variable with block scope.\nJavaScript let. The let statement allows you to declare a variable with block scope.",
+	"authorId": "1221"
+}, {
+	"id": "7",
+	"blogId": "20",
+	"postTitle": "ES7 Features",
+	"postText": "JavaScript let. The let statement allows you to declare a variable with block scope.\nJavaScript let. The let statement allows you to declare a variable with block scope.\nJavaScript let. The let statement allows you to declare a variable with block scope.",
+	"authorId": "456"
+}, {
+	"id": "8",
+	"blogId": "20",
+	"postTitle": "ES8 Features",
+	"postText": "JavaScript let. The let statement allows you to declare a variable with block scope.\nJavaScript let. The let statement allows you to declare a variable with block scope.\nJavaScript let. The let statement allows you to declare a variable with block scope.",
+	"authorId": "456"
+}, {
+	"id": "9",
+	"blogId": "30",
+	"postTitle": "React Lifecycle Hooks",
+	"postText": "JavaScript let. The let statement allows you to declare a variable with block scope.\nJavaScript let. The let statement allows you to declare a variable with block scope.\nJavaScript let. The let statement allows you to declare a variable with block scope.",
+	"authorId": "457"
+}, {
+	"id": "10",
+	"blogId": "30",
+	"postTitle": "React Functional Components",
+	"postText": "JavaScript let. The let statement allows you to declare a variable with block scope.\nJavaScript let. The let statement allows you to declare a variable with block scope.\nJavaScript let. The let statement allows you to declare a variable with block scope.",
+	"authorId": "457"
+}, {
+	"id": "11",
+	"blogId": "40",
+	"postTitle": "React Native Concepts",
+	"postText": "JavaScript let. The let statement allows you to declare a variable with block scope.\nJavaScript let. The let statement allows you to declare a variable with block scope.\nJavaScript let. The let statement allows you to declare a variable with block scope.",
+	"authorId": "458"
+}, {
+	"id": "12",
+	"blogId": "40",
+	"postTitle": "React Native",
+	"postText": "JavaScript let. The let statement allows you to declare a variable with block scope.\nJavaScript let. The let statement allows you to declare a variable with block scope.\nJavaScript let. The let statement allows you to declare a variable with block scope.",
+	"authorId": "458"
+}, {
+	"id": "13",
+	"blogId": "50",
+	"postTitle": "Java-2",
+	"postText": "Java basics.2..",
+	"authorId": "455"
+}]

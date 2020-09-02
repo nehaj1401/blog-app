@@ -1,0 +1,59 @@
+[
+    { "id": "987", 
+       "post_id": "1",
+       "body": "What is object destructuring",
+       "date": "Mon Jul 03 2017 05:30:00 GMT+0530",
+       "replies":[{
+        "id": "987_1", 
+        "comment_id":"987",
+        "body": "What is object destructuring",
+        "date": "Mon Jul 03 2017 05:30:00 GMT+0530"
+       }]
+    },
+    { "id": "989", 
+        "post_id": "1",
+        "body": "What is rest operator? how to use it.",
+        "date": "Mon Jul 03 2017 05:30:00 GMT+0530",
+        "replies":[{
+            "id": "989_1", 
+            "comment_id":"989",
+            "body": "What is object destructuring",
+            "date": "Mon Jul 03 2017 05:30:00 GMT+0530"
+        }]
+    },
+    { "id": "100", 
+        "post_id": "13",
+        "body": "What is rest operator? how to use it.",
+        "date": "Mon Jul 03 2017 05:30:00 GMT+0530",
+        "replies":[{
+            "id": "100_1", 
+            "comment_id":"100",
+            "body": "What is object destructuring",
+            "date": "Mon Jul 03 2017 05:30:00 GMT+0530"
+           }]
+    },
+    { "id": "101", 
+        "post_id": "3",
+        "body": "What is rest operator? how to use it.",
+        "date": "Mon Jul 03 2017 05:30:00 GMT+0530",
+        "replies":[{
+            "id": "101_1", 
+            "comment_id":"101",
+            "body": "What is object destructuring",
+            "date": "Mon Jul 03 2017 05:30:00 GMT+0530"
+        }]
+    },
+    { "id": "102", 
+        "post_id": "4",
+        "body": "What is rest operator? how to use it.",
+        "date": "Mon Jul 03 2017 05:30:00 GMT+0530",
+        "replies": []
+    },
+    { "id": "103", 
+        "post_id": "5",
+        "body": "What is rest operator? how to use it.",
+        "date": "Mon Jul 03 2017 05:30:00 GMT+0530",
+        "replies": []
+    }
+
+]
